@@ -1,0 +1,345 @@
+QMainWindow{
+background:#fffbf3;border:none;
+}
+
+QDialog{
+	background:#FDFEFF;border:none;
+}
+
+QMenuBar QMenu{
+	padding:5px;
+	background:#233352;
+	color:#fffbf3;
+	font: 700 10pt "Segoe UI";
+}
+
+QMenuBar QMenu::separator{
+background:#233352;
+height:2px;
+}
+
+QMenuBar QMenu::item{
+padding: 5px;
+}
+
+QMenuBar QMenu::item:selected{
+	background:rgba(255, 255, 255, 10);
+}
+
+
+QMenuBar{
+	background:#233352;
+	color:#fffbf3;
+	font: 700 10pt "Segoe UI";
+}
+
+QMenuBar::item{
+border-right: 1px solid #fffbf3;
+padding:5px 10px;
+}
+
+QMenuBar::item:selected{
+background:#0085f6;
+}
+
+QMenuBar::item:pressed {
+    background: #233352;
+	color:#fffbf3;
+}
+
+
+QToolBar{
+background:#fffbf3;border:none;
+padding: 10px;
+}
+
+QToolButton{
+width:50px;
+height:35px;
+border:none;
+}
+
+QToolButton::hover{
+background:rgb(221, 233, 250);
+}
+
+QToolButton::pressed{
+background:rgb(200, 212, 227);
+}
+
+QToolBar::separator{
+background:#233352;
+border:none;
+ouline:0;
+width:2px;
+}
+
+
+QTabWidget{
+outline:0;
+background:green;
+}
+
+QTabWidget::pane { /* The tab widget frame */
+outline:0;
+	background:#fffbf3;
+border:none;
+}
+
+
+
+/* Style the tab using the tab sub-control. Note that
+    it reads QTabBar _not_ QTabWidget */
+QTabBar::tab {
+    background: #233352;
+    padding: 5px 10px;
+	font: 700 10pt "Segoe UI";
+	color:#fffbf3;
+	outline:0;
+	border:none;
+}
+
+
+QTabBar::tab:selected {
+    background: #fffbf3;
+color:#233352;
+}
+
+QTabBar::tab:!selected:hover {
+	background:rgb(87, 88, 107);
+}
+
+QTabBar::tab:selected:hover {
+	background:rgb(221, 233, 250);
+}
+
+
+
+
+
+QListWidget{
+background: #fffbf3;
+border : 3px solid #233352;
+	font: 700 16pt "Segoe UI";
+padding:16px 8px;
+}
+
+QListWidget::item{
+
+background:#233352;
+height: 20px;
+padding:15px;
+margin:0 8px 5px 8px;
+border-bottom: 2px solid #fffbf3;
+color:#fffbf3;
+}
+
+
+QListWidget::item::hover{
+background:#0085f6;
+color:#fffbf3;
+border-bottom: 2px solid #fffbf3;
+}
+
+
+QPlainTextEdit{
+	padding:16px 8px;
+	font: 700 16pt "Segoe UI";
+	color:#233352;
+	border : 3px solid #233352;
+	background: #fffbf3;
+}
+
+QTextEdit{
+color:#233352;
+font: 700 12pt "Segoe UI";
+background:#FDFEFF;border:none;
+margin:3px;
+padding:10px;
+}
+
+QScrollBar:vertical {
+     border: 2px solid #233352;
+     background: #fffbf3;
+     width: 15px;
+     margin: 22px 0 22px 0;
+ }
+ QScrollBar::handle:vertical {
+     background: #233352;
+     min-height: 20px;
+ }
+ QScrollBar::add-line:vertical {
+     border: 2px solid #233352;
+     background: #fffbf3;
+     height: 20px;
+     subcontrol-position: bottom;
+     subcontrol-origin: margin;
+ }
+
+ QScrollBar::sub-line:vertical {
+     border: 2px solid #233352;
+     background: #fffbf3;
+     height: 20px;
+     subcontrol-position: top;
+     subcontrol-origin: margin;
+ }
+ QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {
+     border: 2px solid #233352;
+     width: 3px;
+     height: 3px;
+     background: #fdfeff;
+ }
+
+ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+     background: none;
+ }
+
+
+
+ QFontDialog{
+	 background-color:#FDFEFF;
+ }
+
+QFontDialog QWidget{
+	font: 700 9pt "Segoe UI";
+	color:#233352;
+}
+
+QFontDialog QLabel{
+	font: 700 11pt "Segoe UI";
+}
+
+QFontDialog QPushButton{
+	color:#fffbf3;
+}
+
+QColorDialog{
+	background-color:#FDFEFF;
+}
+QColorDialog QWidget{
+	font: 700 9pt "Segoe UI";
+	color:#233352;
+}
+
+QColorDialog QPushButton{
+	color:#fffbf3;
+}
+
+QLineEdit {
+	background:#233352;
+	border:none;
+	color:#fffbf3;
+	padding:12px;
+	font: 700 16px "Segoe UI";
+}
+QSpinBox {
+	padding:5px;
+	color: #233352;
+	background-color: #fffbf3;
+	border:2px solid #233352;
+}
+
+
+
+
+QMessageBox{
+	background:#FDFEFF;border:none;
+}
+
+
+QMessageBox Qlabel {
+	color: #233352;
+	font: 700 12pt "Segoe UI";
+}
+
+
+
+
+
+QCheckBox {
+	padding:2px;
+	color:#233352;
+}
+QCheckBox:hover {
+	border-radius:4px;
+	padding: 1px;
+	color:#fffbf3;
+	background-color:#233352;
+}
+QCheckBox::indicator:checked {
+	border:1px solid #233352;
+	border-radius:4px;
+  	background-color:#fffbf3;
+}
+QCheckBox::indicator:unchecked {
+	border-width:1px solid rgb(246, 134, 86);
+	border-radius:4px;
+  	background-color:rgb(255,255,255);
+}
+
+
+QComboBox {
+	color:#233352;
+	background: #fffbf3;
+}
+QComboBox:editable {
+	/*when choose an item*/
+	selection-color:#233352;
+	selection-background-color: #fffbf3;
+}
+QComboBox QAbstractItemView {
+	/*selection-color: #ffffff;
+	selection-background-color: red;*/
+}
+QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+	color: #fffbf3;
+	background: #233352;
+}
+
+
+QRadioButton {
+	padding: 1px;
+}
+QRadioButton::indicator:checked {
+	height: 10px;
+	width: 10px;
+	border-style:solid;
+	border-radius:5px;
+	border-width: 1px;
+	border-color: rgba(246, 134, 86, 255);
+	color: #a9b7c6;
+	background-color:rgba(246, 134, 86, 255);
+}
+QRadioButton::indicator:!checked {
+	height: 10px;
+	width: 10px;
+	border-style:solid;
+	border-radius:5px;
+	border-width: 1px;
+	border-color: rgb(246, 134, 86);
+	color: #a9b7c6;
+	background-color: transparent;
+}
+
+
+QPushButton{
+background:#233352;
+border:none;
+padding:10px 35px;
+color:#fffbf3;
+	font: 700 16pt "Segoe UI";
+}
+
+
+QPushButton::hover{
+border:none;
+background:#0085f6;
+color:#fffbf3;
+}
+
+
+QPushButton:pressed {
+background:rgb(200, 212, 227);border:none;
+padding:5px;
+color:#233352;
+}
