@@ -10,6 +10,12 @@ void insert(Trie* root, string& str)
 {
     Trie* node = root;
     for (int i = 0; i < str.size(); i++) {
+        if(str[i] < 97 || str[i] > 122){
+            node->isEndOfWord = true;
+            string tmp = str.substr(i+1);
+            insert(root, tmp);
+            return;
+        }
         char ind = str[i] - 'a';
         if (!node->child[ind]) node->child[ind] = new Trie();
         node = node->child[ind];
