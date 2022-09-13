@@ -19,4 +19,6 @@ bool isLastNode(Trie* node);
 void completeRec(Trie* node, string text, vector<string>& container);
 
 int printAutoComplete(Trie* node, string query, vector<string>& container);
+
+void deleteTree(Trie* node);
 #endif // TRIE_H

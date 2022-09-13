@@ -28,6 +28,7 @@ void MainWindow::on_searchButton_clicked()
 {
     if(changed){
         buildTrie();
+        changed = false;
     }
     autoComplete();
 }
@@ -59,7 +60,7 @@ void MainWindow::autoComplete()
 
 void MainWindow::buildTrie()
 {
-    delete tree;
+    deleteTree(tree);
     tree = new Trie();
     QString area = ui->showTextArea->toPlainText();
     auto lines = area.split('\n');

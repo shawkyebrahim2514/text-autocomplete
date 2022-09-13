@@ -52,3 +52,12 @@ int printAutoComplete(Trie* node, string query, vector<string>& container)
     completeRec(curNode, query, container);
     return 1;
 }
+
+void deleteTree(Trie* node) {
+    for (int i = 0; i < ALPHABET_SIZE; i++) {
+        if (node->child[i] != NULL) {
+            deleteTree(node->child[i]);
+        }
+    }
+    delete node;
+}
