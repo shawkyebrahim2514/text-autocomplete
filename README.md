@@ -6,7 +6,7 @@
  > find all words that their prefix matches the text search using trie algorithm
  
  ```
-  you can open exist text file and search from it and edit it if you want
+  you can open an existing text file and search from it and edit it if you want
   or you can create your new text to search from
  ```
  
